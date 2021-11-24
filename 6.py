@@ -15,13 +15,13 @@ def text_length(text):
     if len(text) in range(30, 50):
         char_list = []
         for char in text:
-            if char.isdigit():
+            if char.isalpha():
                 char_list.append(char)
         print("number of letters in a line -> {0}".format(len(char_list)))
 
         num_list = []
         for num in text:
-            if num.isalpha():
+            if num.isdigit():
                 num_list.append(num)
         print("number of digits in a line -> {0}".format(len(num_list)))
 
