@@ -9,14 +9,21 @@
 
 -  якщо довжина бульше 50 - > ваша фантазiя
 """
-import collections
 
 
 def text_length(text):
     if len(text) in range(30, 50):
-        print("character set length -> {0}".format(len(text)))
-        count = collections.Counter(text)
-        print(count)
+        char_list = []
+        for char in text:
+            if char.isdigit():
+                char_list.append(char)
+        print("number of letters in a line -> {0}".format(len(char_list)))
+
+        num_list = []
+        for num in text:
+            if num.isalpha():
+                num_list.append(num)
+        print("number of digits in a line -> {0}".format(len(num_list)))
 
     elif len(text) <= 30:
         num_list = []

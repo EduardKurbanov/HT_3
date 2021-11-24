@@ -5,7 +5,7 @@
 
 
 def season(month):
-    if month == 12 or month == month in range(1, 2 + 1):
+    if month == 12 or month in range(1, 2 + 1):
         print("Winter")
     elif month == month in range(3, 5 + 1):
         print("Spring")

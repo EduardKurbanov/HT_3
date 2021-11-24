@@ -7,7 +7,7 @@
 
 def range_number(num):
     if int(num) > 0:
-        list_random = [y for y in range(0, num) if y % 17 == 0][-1]
+        list_random = [y for y in range(0, num) if y % 17 == 0]
         return list_random
     else:
         print("value is negative, enter a positive value ")
