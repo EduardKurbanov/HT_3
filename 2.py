@@ -6,7 +6,7 @@
 
 def definition_of_a_leap_year(start_year, end_year):
     if (start_year > 0) and (end_year > 0):
-        for year in range(start_year, end_year):
+        for year in range(start_year, end_year + 1):
             if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
                 print("leap years -> {0}".format(year))
     else:
